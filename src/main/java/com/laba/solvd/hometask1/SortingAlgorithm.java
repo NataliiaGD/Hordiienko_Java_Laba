@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class SortingAlgorithm {
     public static void main(String[] args) {
         int [] array = {2,5,8,4,6,7};
+        System.out.println("Unsorted array: " + Arrays.toString(array));
         quickSort(array, 0, array.length - 1);
-        System.out.println("Відсортований масив: " + Arrays.toString(array));
+        System.out.println("Sorted array: " + Arrays.toString(array));
     }
     public static void quickSort(int[] array, int low, int high) {
         if (low < high) {
