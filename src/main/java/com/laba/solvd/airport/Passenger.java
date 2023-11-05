@@ -1,9 +1,9 @@
 package com.laba.solvd.airport;
 
-public class Terminal {
+public class Passenger {
     private String name;
 
-    public Terminal(String name) {
+    public Passenger(String name) {
         this.name = name;
     }
 
