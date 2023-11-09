@@ -1,37 +1,23 @@
 package com.laba.solvd.airport;
 
-public class DepartureAirport {
-    private String name;
-    private String airportCode;
-    private String location;
+public class DepartureAirport extends Airport {
 
     public DepartureAirport(String name, String airportCode, String location) {
-        this.name = name;
-        this.airportCode = airportCode;
-        this.location = location;
+        super(name, airportCode, location);
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return "DepartureAirport{" +
+                "name='" + name + '\'' +
+                ", airportCode='" + airportCode + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public String getAirportStatus() {
+        return "Airport is scheduling departures";
     }
 
-    public String getAirportCode() {
-        return airportCode;
-    }
-
-    public void setAirportCode(String airportCode) {
-        this.airportCode = airportCode;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
 }
