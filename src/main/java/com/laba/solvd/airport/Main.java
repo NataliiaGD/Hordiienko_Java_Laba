@@ -20,7 +20,7 @@ public class Main {
                 AirportType.ARRIVAL_AIRPORT);
         System.out.println(calculateNumberOfCrewForFlight(flight));
 
-        Ticket ticket = new Ticket(1300);
+        Ticket ticket = new Ticket(1200);
         double price = ticket.getPrice();
         System.out.println(checkTicketTypeAccordingToThePrice(price));
     }
