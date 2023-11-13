@@ -1,14 +1,28 @@
 package com.laba.solvd.airport;
 
-public abstract class Airport {
-    protected String name;
-    protected String airportCode;
-    protected String location;
+import com.laba.solvd.airport.enums.AirportType;
 
-    public Airport(String name, String airportCode, String location) {
+public class Airport {
+    private String name;
+    private String airportCode;
+    private String location;
+    private AirportType airportType;
+
+    public Airport(String name, String airportCode, String location, AirportType airportType) {
         this.name = name;
         this.airportCode = airportCode;
         this.location = location;
+        this.airportType = airportType;
+    }
+
+    @Override
+    public String toString() {
+        return "Airport{" +
+                "name='" + name + '\'' +
+                ", airportCode='" + airportCode + '\'' +
+                ", location='" + location + '\'' +
+                ", airportType=" + airportType +
+                '}';
     }
 
     public String getName() {
@@ -35,5 +49,11 @@ public abstract class Airport {
         this.location = location;
     }
 
-    protected abstract String getAirportStatus();
+    public AirportType getAirportType() {
+        return airportType;
+    }
+
+    public void setAirportType(AirportType airportType) {
+        this.airportType = airportType;
+    }
 }
