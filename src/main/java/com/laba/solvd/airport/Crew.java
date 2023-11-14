@@ -1,41 +1,27 @@
 package com.laba.solvd.airport;
 
-public class Crew extends Employee {
-    private String position;
-    private int flightHours;
-    private Aircraft primaryAircraft;
+import java.util.Arrays;
 
-    public Crew(String name, int age, String employeeId, int workingExperience,
-                String position, int flightHours, Aircraft primaryAircraft) {
-        super(name, age, employeeId, workingExperience);
-        this.position = position;
-        this.flightHours = flightHours;
-        this.primaryAircraft = primaryAircraft;
+public class Crew {
+    private Employee[] employees;
+
+    public Crew(Employee[] employees) {
+        this.employees = employees;
     }
 
-
-    public String getPosition() {
-        return position;
+    @Override
+    public String toString() {
+        return "Crew{" +
+                "employees=" + Arrays.toString(employees) +
+                '}';
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public Employee[] getEmployees() {
+        return employees;
     }
 
-    public int getFlightHours() {
-        return flightHours;
-    }
-
-    public void setFlightHours(int flightHours) {
-        this.flightHours = flightHours;
-    }
-
-    public Aircraft getPrimaryAircraft() {
-        return primaryAircraft;
-    }
-
-    public void setPrimaryAircraft(Aircraft primaryAircraft) {
-        this.primaryAircraft = primaryAircraft;
+    public void setEmployees(Employee[] employees) {
+        this.employees = employees;
     }
 
     public static int calculateNumberOfCrewForFlight(Flight flight) {

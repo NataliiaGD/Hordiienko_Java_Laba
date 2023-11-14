@@ -7,15 +7,15 @@ public class Flight {
     private String flightNumber;
     private String arrivalAirport;
     private String departureAirport;
-    private LocalDateTime arrivalTime;
     private LocalDateTime departureTime;
+    private LocalDateTime arrivalTime;
     private double distanceInKilometres;
 
-    public Flight(String flightNumber, String arrivalAirport, String departureAirport,
+    public Flight(String flightNumber, String departureAirport, String arrivalAirport,
                   LocalDateTime arrivalTime, LocalDateTime departureTime, double distanceInKilometres) {
         this.flightNumber = flightNumber;
-        this.arrivalAirport = arrivalAirport;
         this.departureAirport = departureAirport;
+        this.arrivalAirport = arrivalAirport;
         this.arrivalTime = arrivalTime;
         this.departureTime = departureTime;
         this.distanceInKilometres = distanceInKilometres;

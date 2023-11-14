@@ -17,7 +17,8 @@ public class Ticket {
         this.price = price;
     }
 
-    public static TicketType checkTicketTypeAccordingToThePrice(double price) {
+    public static TicketType checkTicketTypeAccordingToThePrice(Ticket ticket) {
+        double price = ticket.getPrice();
         if (price <= 500) {
             return TicketType.ECONOMY_CLASS;
         } else if (price <= 1000) {

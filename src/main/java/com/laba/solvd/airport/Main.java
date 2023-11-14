@@ -11,17 +11,27 @@ import static com.laba.solvd.airport.Ticket.checkTicketTypeAccordingToThePrice;
 public class Main {
     public static void main(String[] args) {
         Person passenger = new Passenger("Bob", 25, "abc123");
-        Flight flight = new Flight("abc12", "Australia", "Poland",
-                LocalDateTime.of(2023, 12, 12, 12, 12),
-                LocalDateTime.of(2023, 12, 12, 20, 20), 600);
         Airport warsawAirport = new Airport("Chopin", "123", "Poland",
                 AirportType.DEPARTURE_AIRPORT);
         Airport sydneyAirport = new Airport("Sydney", "123", "Australia",
                 AirportType.ARRIVAL_AIRPORT);
+        Flight flight = new Flight("abc12", warsawAirport.getLocation(), sydneyAirport.getLocation(),
+                LocalDateTime.of(2023, 12, 12, 12, 12),
+                LocalDateTime.of(2023, 12, 12, 20, 20), 600);
+
         System.out.println(calculateNumberOfCrewForFlight(flight));
 
-        Ticket ticket = new Ticket(1200);
-        double price = ticket.getPrice();
-        System.out.println(checkTicketTypeAccordingToThePrice(price));
+        Ticket ticket = new Ticket(1500);
+        System.out.println(checkTicketTypeAccordingToThePrice(ticket));
+
+        Employee employee = new Employee("Jack", 30, "1ed",
+                "Pilot", 10);
+        Employee employee2 = new Employee("John", 28, "2ed",
+                "Cabin_Crew", 10);
+
+        Employee[] employees = {employee, employee2};
+
+        Crew crew = new Crew(employees);
+        System.out.println(crew);
     }
 }
