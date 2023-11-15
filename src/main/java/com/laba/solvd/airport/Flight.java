@@ -1,7 +1,6 @@
 package com.laba.solvd.airport;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Flight {
     private String flightNumber;
