@@ -1,8 +1,10 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.interfaces.LuggageHandler;
+
 import java.time.LocalDateTime;
 
-public class Flight {
+public class Flight implements LuggageHandler {
     private String flightNumber;
     private String arrivalAirport;
     private String departureAirport;
@@ -66,5 +68,10 @@ public class Flight {
 
     public void setDistanceInKilometres(double distanceInKilometres) {
         this.distanceInKilometres = distanceInKilometres;
+    }
+
+    @Override
+    public void addLuggage(Luggage luggage) {
+        System.out.println("Luggage added to the flight: " + luggage);
     }
 }

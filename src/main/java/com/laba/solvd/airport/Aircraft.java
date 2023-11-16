@@ -1,6 +1,8 @@
 package com.laba.solvd.airport;
 
-public class Aircraft {
+import com.laba.solvd.airport.interfaces.Flyable;
+
+public class Aircraft implements Flyable {
     private int aircraftId;
     private String type;
 
@@ -23,5 +25,10 @@ public class Aircraft {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("AircraftId " + getAircraftId() + "," + " Type " + getType() + " is flying");
     }
 }

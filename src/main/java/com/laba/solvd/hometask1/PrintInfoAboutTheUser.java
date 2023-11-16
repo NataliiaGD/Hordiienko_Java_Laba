@@ -1,7 +1,5 @@
 package com.laba.solvd.hometask1;
 
-import java.util.Scanner;
-
 public class PrintInfoAboutTheUser {
     public static void main(String[] args) {
         String name = args[0];
