@@ -78,7 +78,7 @@ public class TicketRequest {
         }
     }
 
-    public double calculateTotalPrice() {
+    public final double calculateTotalPrice() {
         double minimalPrice = ticketType.getMinimalPrice();
         double luggagePrice = calculateLuggagePrice();
         double distanceCoefficient = calculateDistanceCoefficient();

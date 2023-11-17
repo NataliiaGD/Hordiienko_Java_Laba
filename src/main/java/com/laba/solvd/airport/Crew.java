@@ -3,10 +3,19 @@ package com.laba.solvd.airport;
 import java.util.Arrays;
 
 public class Crew {
-    private Employee[] employees;
+    private static Employee[] employees;
 
-    public Crew(Employee[] employees) {
-        this.employees = employees;
+    static {
+        employees = new Employee[5];
+        employees[0] = new Employee("Bob", 35, "abc221", "Pilot", 5);
+        employees[1] = new Employee("John", 30, "abc233", "Pilot", 6);
+        employees[2] = new Employee("Bred", 25, "abc221", "Crew", 3);
+        employees[3] = new Employee("Kate", 28, "abc221", "Crew", 5);
+        employees[4] = new Employee("Kelly", 27, "abc221", "Pilot", 4);
+    }
+
+    public Crew() {
+
     }
 
     @Override
@@ -16,7 +25,7 @@ public class Crew {
                 '}';
     }
 
-    public Employee[] getEmployees() {
+    public static Employee[] getEmployees() {
         return employees;
     }
 

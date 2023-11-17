@@ -1,6 +1,6 @@
 package com.laba.solvd.airport;
 
-public class Luggage {
+public final class Luggage {
     private String type;
     private double weight;
     private String ownerName;
@@ -9,6 +9,15 @@ public class Luggage {
         this.type = type;
         this.weight = weight;
         this.ownerName = ownerName;
+    }
+
+    @Override
+    public String toString() {
+        return "Luggage{" +
+                "type='" + type + '\'' +
+                ", weight=" + weight +
+                ", ownerName='" + ownerName + '\'' +
+                '}';
     }
 
     public String getType() {

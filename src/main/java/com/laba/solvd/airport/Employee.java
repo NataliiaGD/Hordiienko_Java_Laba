@@ -1,8 +1,11 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.interfaces.EmployeeInformationProvider;
+import com.laba.solvd.airport.interfaces.Workable;
+
 import java.util.Objects;
 
-public class Employee extends Person {
+public class Employee extends Person implements EmployeeInformationProvider, Workable {
 
     protected String employeeId;
     protected String position;
@@ -67,5 +70,17 @@ public class Employee extends Person {
     public void displayPersonInfo() {
         System.out.println("Employee name " + getName());
         System.out.println("Employee id " + getEmployeeId());
+    }
+
+    @Override
+    public int calculateYearsToRetirement() {
+        int retirementAge = 65;
+        int yearsToWork = retirementAge - getAge();
+        return yearsToWork;
+    }
+
+    @Override
+    public void work() {
+        System.out.println(getName() + " works as " + getPosition());
     }
 }

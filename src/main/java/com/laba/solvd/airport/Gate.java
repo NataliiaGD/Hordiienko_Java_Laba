@@ -1,17 +1,17 @@
 package com.laba.solvd.airport;
 
 public class Gate {
-    private int gateNumber;
+    private String gateNumber;
 
-    public Gate(int gateNumber) {
+    public Gate(String gateNumber) {
         this.gateNumber = gateNumber;
     }
 
-    public int getGateNumber() {
+    public String getGateNumber() {
         return gateNumber;
     }
 
-    public void setGateNumber(int gateNumber) {
+    public void setGateNumber(String gateNumber) {
         this.gateNumber = gateNumber;
     }
 }
