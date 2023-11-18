@@ -1,8 +1,12 @@
 package com.laba.solvd.airport;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Objects;
 
 public class Passenger extends Person {
+    private static Logger LOGGER = LogManager.getLogger(Passenger.class);
     private String flightNumber;
 
     public Passenger(String name, int age, String flightNumber) {
@@ -40,7 +44,7 @@ public class Passenger extends Person {
 
     @Override
     public void displayPersonInfo() {
-        System.out.println("Passenger name " + getName());
-        System.out.println("Passenger flight number " + getFlightNumber());
+        LOGGER.info("Passenger name " + getName());
+        LOGGER.info("Passenger flight number " + getFlightNumber());
     }
 }

@@ -1,8 +1,11 @@
 package com.laba.solvd.airport;
 
 import com.laba.solvd.airport.interfaces.Flyable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Aircraft implements Flyable {
+    private static Logger LOGGER = LogManager.getLogger(Aircraft.class);
     private int aircraftId;
     private String type;
 
@@ -29,6 +32,6 @@ public class Aircraft implements Flyable {
 
     @Override
     public void fly() {
-        System.out.println("AircraftId " + getAircraftId() + "," + " Type " + getType() + " is flying");
+        LOGGER.info("AircraftId " + getAircraftId() + "," + " Type " + getType() + " is flying");
     }
 }

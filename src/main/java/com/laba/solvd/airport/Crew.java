@@ -1,8 +1,15 @@
 package com.laba.solvd.airport;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class Crew {
+    private static Logger LOGGER = LogManager.getLogger(Crew.class);
     private static Employee[] employees;
 
     static {
@@ -23,6 +30,21 @@ public class Crew {
         return "Crew{" +
                 "employees=" + Arrays.toString(employees) +
                 '}';
+    }
+
+    public static void saveCrewToFile() {
+        String filePath = "employees.txt";
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            for (Employee employee : employees) {
+                writer.write(employee.toString());
+                writer.newLine();
+            }
+            LOGGER.info("Employees saved to file successfully");
+        } catch (IOException e) {
+            LOGGER.error("Something went wrong " + e.getMessage());
+        }
+
     }
 
     public static Employee[] getEmployees() {

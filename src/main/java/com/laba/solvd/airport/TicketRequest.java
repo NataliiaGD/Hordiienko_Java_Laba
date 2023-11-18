@@ -1,10 +1,16 @@
 package com.laba.solvd.airport;
 
 import com.laba.solvd.airport.enums.TicketType;
+import com.laba.solvd.airport.exceptions.InvalidDistanceException;
+import com.laba.solvd.airport.exceptions.InvalidLuggageWeightException;
+import com.laba.solvd.airport.exceptions.InvalidPriceException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static com.laba.solvd.airport.enums.TicketType.*;
 
 public class TicketRequest {
+    private static Logger LOGGER = LogManager.getLogger(TicketRequest.class);
     private TicketType ticketType;
     private Luggage luggage;
     private Flight flight;
@@ -39,7 +45,10 @@ public class TicketRequest {
         this.flight = flight;
     }
 
-    public static TicketType checkTicketTypeAccordingToThePrice(double price) {
+    public static TicketType checkTicketTypeAccordingToThePrice(double price) throws InvalidPriceException {
+        if (price <= 0) {
+            throw new InvalidPriceException("Price cannot be equal or less than 0");
+        }
 
         if (price <= ECONOMY_CLASS.getMinimalPrice()) {
             return ECONOMY_CLASS;
@@ -52,8 +61,16 @@ public class TicketRequest {
         }
     }
 
-    public double calculateLuggagePrice() {
+    public double calculateLuggagePrice() throws InvalidLuggageWeightException, InvalidDistanceException {
         double basePrice = 200;
+
+        if (luggage.getWeight() <= 0) {
+            throw new InvalidLuggageWeightException("Luggage weight cannot be equal or less than 0");
+        }
+        if (flight.getDistanceInKilometres() <= 0) {
+            throw new InvalidDistanceException("Distance cannot be equal or less than 0");
+        }
+
         if (luggage.getWeight() <= 10) {
             basePrice += 50;
         } else if (luggage.getWeight() <= 20) {
@@ -68,9 +85,13 @@ public class TicketRequest {
             basePrice *= 1.1;
         }
         return basePrice;
+
     }
 
-    private double calculateDistanceCoefficient() {
+    private double calculateDistanceCoefficient() throws InvalidDistanceException {
+        if (flight.getDistanceInKilometres() <= 0) {
+            throw new InvalidDistanceException("Distance cannot be equal or less than 0");
+        }
         if (flight.getDistanceInKilometres() > 5000) {
             return 1.1;
         } else {
@@ -80,8 +101,21 @@ public class TicketRequest {
 
     public final double calculateTotalPrice() {
         double minimalPrice = ticketType.getMinimalPrice();
-        double luggagePrice = calculateLuggagePrice();
-        double distanceCoefficient = calculateDistanceCoefficient();
+
+        double luggagePrice = 0;
+        double distanceCoefficient = 0;
+        try {
+            luggagePrice = calculateLuggagePrice();
+
+
+            distanceCoefficient = calculateDistanceCoefficient();
+        } catch (InvalidLuggageWeightException e) {
+            System.err.println(e.getMessage());
+
+        } catch (InvalidDistanceException e) {
+            System.err.println(e.getMessage());
+
+        }
         return minimalPrice + luggagePrice + distanceCoefficient;
     }
 }

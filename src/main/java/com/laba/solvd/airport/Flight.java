@@ -1,10 +1,13 @@
 package com.laba.solvd.airport;
 
 import com.laba.solvd.airport.interfaces.LuggageHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 
 public class Flight implements LuggageHandler {
+    private static Logger LOGGER = LogManager.getLogger(Flight.class);
     private String flightNumber;
     private String arrivalAirport;
     private String departureAirport;
@@ -72,6 +75,6 @@ public class Flight implements LuggageHandler {
 
     @Override
     public void addLuggage(Luggage luggage) {
-        System.out.println("Luggage added to the flight: " + luggage);
+        LOGGER.info("Luggage added to the flight: " + luggage);
     }
 }
