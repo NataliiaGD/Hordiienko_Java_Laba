@@ -6,14 +6,18 @@ import com.laba.solvd.airport.interfaces.TerminalOperation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.List;
+
 public class Terminal implements TerminalOperation {
     private static Logger LOGGER = LogManager.getLogger(Terminal.class);
     private String name;
     private TerminalType terminalType;
+    private List<Gate> listOfGates;
 
-    public Terminal(String name, TerminalType terminalType) {
+    public Terminal(String name, TerminalType terminalType, List<Gate> listOfGates) {
         this.name = name;
         this.terminalType = terminalType;
+        this.listOfGates = listOfGates;
     }
 
     public String getName() {
@@ -30,6 +34,14 @@ public class Terminal implements TerminalOperation {
 
     public void setTerminalType(TerminalType terminalType) {
         this.terminalType = terminalType;
+    }
+
+    public List<Gate> getListOfGates() {
+        return listOfGates;
+    }
+
+    public void setListOfGates(List<Gate> listOfGates) {
+        this.listOfGates = listOfGates;
     }
 
     @Override

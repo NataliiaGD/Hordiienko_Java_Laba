@@ -9,11 +9,12 @@ import java.time.LocalDateTime;
 public class Flight implements LuggageHandler {
     private static Logger LOGGER = LogManager.getLogger(Flight.class);
     private String flightNumber;
-    private String arrivalAirport;
     private String departureAirport;
+    private String arrivalAirport;
     private LocalDateTime departureTime;
     private LocalDateTime arrivalTime;
     private double distanceInKilometres;
+
 
     public Flight(String flightNumber, String departureAirport, String arrivalAirport,
                   LocalDateTime arrivalTime, LocalDateTime departureTime, double distanceInKilometres) {

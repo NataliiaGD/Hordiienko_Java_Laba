@@ -1,19 +1,15 @@
 package com.laba.solvd.airport;
 
-import com.laba.solvd.airport.enums.AirportType;
 import com.laba.solvd.airport.exceptions.InvalidPriceException;
 import com.laba.solvd.airport.exceptions.InvalidTerminalTypeException;
-import com.laba.solvd.airport.interfaces.Workable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
-import java.util.Arrays;
+import java.util.*;
 
-import static com.laba.solvd.airport.Crew.*;
-import static com.laba.solvd.airport.TicketRequest.checkTicketTypeAccordingToThePrice;
+import static com.laba.solvd.airport.enums.AirportType.*;
 import static com.laba.solvd.airport.enums.TerminalType.INTERNATIONAL;
-import static com.laba.solvd.airport.enums.TicketType.ECONOMY_CLASS;
 
 public class Main {
     static {
@@ -23,48 +19,37 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) throws InvalidPriceException, InvalidTerminalTypeException {
-        Passenger passenger = new Passenger("Bob", 25, "abc123");
-        Airport warsawAirport = new Airport("Chopin", "123", "Poland",
-                AirportType.DEPARTURE_AIRPORT);
-        Airport sydneyAirport = new Airport("Sydney", "123", "Australia",
-                AirportType.ARRIVAL_AIRPORT);
-        Flight flight = new Flight("abc12", warsawAirport.getLocation(), sydneyAirport.getLocation(),
-                LocalDateTime.of(2023, 12, 12, 12, 12),
-                LocalDateTime.of(2023, 12, 12, 20, 20), -5001);
-        Gate gate = new Gate("2");
+        List<Aircraft> listOfAircraft = new ArrayList<>();
+        listOfAircraft.add(new Aircraft(1, "Boeing777"));
+        listOfAircraft.add(new Aircraft(2, "AirBus320"));
 
-        LOGGER.info(calculateNumberOfCrewForFlight(flight));
+        List<Employee> listOfEmployees = new LinkedList<>();
+        listOfEmployees.add(new Employee("Bob", 35, "1abc", "Pilot", 5));
+        listOfEmployees.add(new Employee("Robert", 37, "2abc", "Pilot", 8));
+        listOfEmployees.add(new Employee("Kate", 30, "3abc", "CabinCrew", 5));
 
-        Luggage luggage = new Luggage("CarryOn", 5, passenger.getName());
-        TicketRequest ticketRequest = new TicketRequest(ECONOMY_CLASS, luggage, flight);
-        LOGGER.info(ticketRequest.calculateTotalPrice());
+        Airline airline = new Airline("LOTAirline", 3, listOfAircraft, listOfEmployees);
 
-        Employee employee = new Employee("Jack", 30, "1ed",
-                "Pilot", 10);
-        Employee employee2 = new Employee("John", 28, "2ed",
-                "Cabin_Crew", 10);
+        List<Flight> listOfFlights = new ArrayList<>();
+        listOfFlights.add(new Flight("1CD", "ChopinAirport", "DohaAirport",
+                LocalDateTime.now().minusHours(15), LocalDateTime.now().minusHours(10), 5000));
+        listOfFlights.add(new Flight("1CDF", "DohaAirport", "SydneyAirport",
+                LocalDateTime.now().minusHours(10), LocalDateTime.now(), 5000));
 
+        List<Gate> listOfGates = new ArrayList<>();
+        listOfGates.add(new Gate("10A"));
+        listOfGates.add(new Gate("10B"));
+        listOfGates.add(new Gate("10C"));
 
-        Terminal terminal = new Terminal("A", INTERNATIONAL);
-        terminal.performTerminalOperation();
-        LOGGER.info(employee.calculateYearsToRetirement());
+        Set<Terminal> setOfTerminals = new HashSet<>();
+        setOfTerminals.add(new Terminal("TerminalB", INTERNATIONAL, listOfGates));
+        setOfTerminals.add(new Terminal("TerminalD", INTERNATIONAL, listOfGates));
 
-        Aircraft aircraft = new Aircraft(44, "Boeing");
-        aircraft.fly();
-        employee.work();
-        LOGGER.info(Arrays.toString(getEmployees()));
-
-        Workable employee3 = new Employee("Jack", 30, "1ed",
-                "Pilot", 10);
-        employee3.work();
-
-        Person employee4 = new Employee("Jack", 30, "1ed",
-                "Pilot", 10);
-        employee4.displayPersonInfo();
-
-        LOGGER.info(checkTicketTypeAccordingToThePrice(1000));
-        saveCrewToFile();
-
-
+        Airport airport = new Airport("ChopinAirport", "WAW", "Warsaw",
+                DEPARTURE_AIRPORT, listOfFlights, setOfTerminals);
+        Airport airport2 = new Airport("DohaAirport", "DOH", "Doha",
+                TRANSIT, listOfFlights, setOfTerminals);
+        Airport airport3 = new Airport("SydneyAirport", "SYD", "Sydney",
+                ARRIVAL_AIRPORT, listOfFlights, setOfTerminals);
     }
 }
