@@ -5,3 +5,70 @@
 2023-11-18 21:47:12 INFO  Employee:22 - Employee with name Kelly and age 27 and employee id abc221 is created
 2023-11-18 21:47:12 INFO  Main:36 - 5
 2023-11-18 21:47:12 INFO  Main:40 - 800.0
+2023-11-20 21:34:41 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 21:34:41 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 21:34:42 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 21:34:42 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 21:34:42 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 21:34:42 INFO  Main:46 - 15
+2023-11-20 21:47:28 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 21:47:28 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 21:47:28 INFO  Main:46 - 15
+2023-11-20 21:47:28 INFO  Main:67 - 1051.0
+2023-11-20 21:54:49 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 21:54:49 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 21:54:49 INFO  Main:37 - 30
+2023-11-20 21:54:49 INFO  Main:48 - 15
+2023-11-20 21:54:49 INFO  Main:69 - 1051.0
+2023-11-20 21:57:29 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 21:57:29 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 21:57:29 INFO  Main:38 - 30
+2023-11-20 21:57:29 INFO  Employee:81 - Employee name Kate
+2023-11-20 21:57:29 INFO  Employee:82 - Employee id 3abc
+2023-11-20 21:57:29 INFO  Main:51 - 15
+2023-11-20 21:57:29 INFO  Main:72 - 1051.0
+2023-11-20 22:03:24 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 22:03:24 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 22:03:24 INFO  Main:38 - 30
+2023-11-20 22:03:24 INFO  Employee:81 - Employee name Kate
+2023-11-20 22:03:24 INFO  Employee:82 - Employee id 3abc
+2023-11-20 22:03:24 INFO  Main:50 - 15
+2023-11-20 22:03:24 INFO  Main:73 - 1051.0
+2023-11-20 22:03:24 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
+2023-11-20 22:08:34 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 22:08:34 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 22:08:34 INFO  Main:38 - 30
+2023-11-20 22:08:34 INFO  Employee:81 - Employee name Kate
+2023-11-20 22:08:34 INFO  Employee:82 - Employee id 3abc
+2023-11-20 22:08:34 INFO  Main:50 - 15
+2023-11-20 22:08:34 INFO  Terminal:50 - International terminal operation
+2023-11-20 22:08:34 INFO  Main:76 - 1051.0
+2023-11-20 22:08:34 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
+2023-11-20 22:14:13 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-11-20 22:14:13 INFO  Employee:94 - Bob works as Pilot
+2023-11-20 22:14:13 INFO  Main:39 - 30
+2023-11-20 22:14:13 INFO  Employee:81 - Employee name Kate
+2023-11-20 22:14:13 INFO  Employee:82 - Employee id 3abc
+2023-11-20 22:14:13 INFO  Main:51 - 15
+2023-11-20 22:14:13 INFO  Terminal:50 - International terminal operation
+2023-11-20 22:14:13 INFO  Main:79 - 1051.0
+2023-11-20 22:14:13 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
+2023-11-20 22:14:13 INFO  Main:84 - BoardingPass{passengerName='Bob', seatNumber='A82', flightNumber='1CD', boardingTime=2023-11-20T11:14:13.123010, gateNumber='10A'}

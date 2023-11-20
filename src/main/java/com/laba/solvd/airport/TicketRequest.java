@@ -106,15 +106,9 @@ public class TicketRequest {
         double distanceCoefficient = 0;
         try {
             luggagePrice = calculateLuggagePrice();
-
-
             distanceCoefficient = calculateDistanceCoefficient();
-        } catch (InvalidLuggageWeightException e) {
-            System.err.println(e.getMessage());
-
-        } catch (InvalidDistanceException e) {
-            System.err.println(e.getMessage());
-
+        } catch (InvalidLuggageWeightException | InvalidDistanceException e) {
+            LOGGER.error(e.getMessage());
         }
         return minimalPrice + luggagePrice + distanceCoefficient;
     }
