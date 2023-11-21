@@ -7,9 +7,9 @@ public class Airline {
     private String airlineName;
     private int numberOfEmployees;
     private List<Aircraft> listOfAircraft;
-    private List<Employee> listOfEmployees;
+    private CustomLinkedList<Employee> listOfEmployees;
 
-    public Airline(String airlineName, int numberOfEmployees, List<Aircraft> listOfAircraft, List<Employee> listOfEmployees) {
+    public Airline(String airlineName, int numberOfEmployees, List<Aircraft> listOfAircraft, CustomLinkedList<Employee> listOfEmployees) {
         this.airlineName = airlineName;
         this.numberOfEmployees = numberOfEmployees;
         this.listOfAircraft = listOfAircraft;
@@ -53,11 +53,11 @@ public class Airline {
         this.listOfAircraft = listOfAircraft;
     }
 
-    public List<Employee> getListOfEmployees() {
+    public CustomLinkedList<Employee> getListOfEmployees() {
         return listOfEmployees;
     }
 
-    public void setListOfEmployees(List<Employee> listOfEmployees) {
+    public void setListOfEmployees(CustomLinkedList<Employee> listOfEmployees) {
         this.listOfEmployees = listOfEmployees;
     }
 }

@@ -6,7 +6,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import static com.laba.solvd.airport.BoardingPass.generateBoardingPass;
 import static com.laba.solvd.airport.Crew.calculateNumberOfCrewForFlight;
@@ -29,7 +32,7 @@ public class Main {
         Aircraft aircraft1 = listOfAircraft.get(0);
         aircraft1.fly();
 
-        List<Employee> listOfEmployees = new LinkedList<>();
+        CustomLinkedList<Employee> listOfEmployees = new CustomLinkedList<>();
         listOfEmployees.add(new Employee("Bob", 35, "1abc", "Pilot", 5));
         listOfEmployees.add(new Employee("Robert", 37, "2abc", "Pilot", 8));
         listOfEmployees.add(new Employee("Kate", 30, "3abc", "CabinCrew", 5));
