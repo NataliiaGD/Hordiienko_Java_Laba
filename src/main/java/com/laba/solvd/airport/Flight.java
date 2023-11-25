@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import java.time.LocalDateTime;
 
 public class Flight implements LuggageHandler {
-    private static Logger LOGGER = LogManager.getLogger(Flight.class);
+    private static final Logger LOGGER = LogManager.getLogger(Flight.class);
     private String flightNumber;
     private String departureAirport;
     private String arrivalAirport;

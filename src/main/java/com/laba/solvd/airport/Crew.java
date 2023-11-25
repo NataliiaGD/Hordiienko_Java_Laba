@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class Crew {
-    private static Logger LOGGER = LogManager.getLogger(Crew.class);
+    private static final Logger LOGGER = LogManager.getLogger(Crew.class);
     private List<Employee> listOfEmployees;
 
     public Crew(List<Employee> listOfEmployees) {

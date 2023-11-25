@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Aircraft implements Flyable {
-    private static Logger LOGGER = LogManager.getLogger(Aircraft.class);
+    private static final Logger LOGGER = LogManager.getLogger(Aircraft.class);
     private int aircraftId;
     private String type;
 

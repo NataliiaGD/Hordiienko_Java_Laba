@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import static com.laba.solvd.airport.enums.TicketType.*;
 
 public class TicketRequest {
-    private static Logger LOGGER = LogManager.getLogger(TicketRequest.class);
+    private static final Logger LOGGER = LogManager.getLogger(TicketRequest.class);
     private TicketType ticketType;
     private Luggage luggage;
     private Flight flight;

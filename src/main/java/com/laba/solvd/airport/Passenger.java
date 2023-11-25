@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Objects;
 
 public class Passenger extends Person {
-    private static Logger LOGGER = LogManager.getLogger(Passenger.class);
+    private static final Logger LOGGER = LogManager.getLogger(Passenger.class);
     private String flightNumber;
 
     public Passenger(String name, int age, String flightNumber) {

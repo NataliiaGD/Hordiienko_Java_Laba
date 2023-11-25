@@ -24,7 +24,7 @@ public class Main {
 
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
-    public static void main(String[] args) throws InvalidPriceException, InvalidTerminalTypeException {
+    public static void main(String[] args) throws InvalidTerminalTypeException {
 
         List<Aircraft> listOfAircraft = new ArrayList<>();
         listOfAircraft.add(new Aircraft(1, "Boeing777"));

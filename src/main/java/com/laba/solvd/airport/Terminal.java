@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class Terminal implements TerminalOperation {
-    private static Logger LOGGER = LogManager.getLogger(Terminal.class);
+    private static final Logger LOGGER = LogManager.getLogger(Terminal.class);
     private String name;
     private TerminalType terminalType;
     private List<Gate> listOfGates;
