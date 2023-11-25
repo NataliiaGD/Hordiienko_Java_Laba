@@ -1,12 +1,15 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.exceptions.InvalidWorkingExperienceException;
 import com.laba.solvd.airport.interfaces.EmployeeInformationProvider;
 import com.laba.solvd.airport.interfaces.Workable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Objects;
 
 public class Employee extends Person implements EmployeeInformationProvider, Workable {
-
+    private static final Logger LOGGER = LogManager.getLogger(Employee.class);
     protected String employeeId;
     protected String position;
     protected int workingExperience;
@@ -16,6 +19,8 @@ public class Employee extends Person implements EmployeeInformationProvider, Wor
         this.employeeId = employeeId;
         this.position = position;
         this.workingExperience = workingExperience;
+        LOGGER.info("Employee with name " + getName() + " and age " + getAge()
+                + " and employee id " + getEmployeeId() + " is created");
     }
 
     @Override
@@ -62,14 +67,19 @@ public class Employee extends Person implements EmployeeInformationProvider, Wor
         return workingExperience;
     }
 
-    public void setWorkingExperience(int workingExperience) {
-        this.workingExperience = workingExperience;
+    public void setWorkingExperience(int workingExperience) throws InvalidWorkingExperienceException {
+        if (workingExperience < 0) {
+            throw new InvalidWorkingExperienceException("Working experience cannot be less than 0");
+        } else {
+            this.workingExperience = workingExperience;
+        }
+
     }
 
     @Override
     public void displayPersonInfo() {
-        System.out.println("Employee name " + getName());
-        System.out.println("Employee id " + getEmployeeId());
+        LOGGER.info("Employee name " + getName());
+        LOGGER.info("Employee id " + getEmployeeId());
     }
 
     @Override
@@ -81,6 +91,6 @@ public class Employee extends Person implements EmployeeInformationProvider, Wor
 
     @Override
     public void work() {
-        System.out.println(getName() + " works as " + getPosition());
+        LOGGER.info(getName() + " works as " + getPosition());
     }
 }

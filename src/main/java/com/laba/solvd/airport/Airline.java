@@ -1,14 +1,19 @@
 package com.laba.solvd.airport;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Airline {
     private String airlineName;
-    private int crew;
+    private int numberOfEmployees;
+    private List<Aircraft> listOfAircraft;
+    private CustomLinkedList<Employee> listOfEmployees;
 
-    public Airline(String airlineName, int crew) {
+    public Airline(String airlineName, int numberOfEmployees, List<Aircraft> listOfAircraft, CustomLinkedList<Employee> listOfEmployees) {
         this.airlineName = airlineName;
-        this.crew = crew;
+        this.numberOfEmployees = numberOfEmployees;
+        this.listOfAircraft = listOfAircraft;
+        this.listOfEmployees = listOfEmployees;
     }
 
     @Override
@@ -16,12 +21,12 @@ public class Airline {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Airline airline = (Airline) o;
-        return crew == airline.crew && Objects.equals(airlineName, airline.airlineName);
+        return numberOfEmployees == airline.numberOfEmployees && airlineName.equals(airline.airlineName) && listOfAircraft.equals(airline.listOfAircraft) && listOfEmployees.equals(airline.listOfEmployees);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(airlineName, crew);
+        return Objects.hash(airlineName, numberOfEmployees, listOfAircraft, listOfEmployees);
     }
 
     public String getAirlineName() {
@@ -32,11 +37,27 @@ public class Airline {
         this.airlineName = airlineName;
     }
 
-    public int getCrew() {
-        return crew;
+    public int getNumberOfEmployees() {
+        return numberOfEmployees;
     }
 
-    public void setCrew(int crew) {
-        this.crew = crew;
+    public void setNumberOfEmployees(int numberOfEmployees) {
+        this.numberOfEmployees = numberOfEmployees;
+    }
+
+    public List<Aircraft> getListOfAircraft() {
+        return listOfAircraft;
+    }
+
+    public void setListOfAircraft(List<Aircraft> listOfAircraft) {
+        this.listOfAircraft = listOfAircraft;
+    }
+
+    public CustomLinkedList<Employee> getListOfEmployees() {
+        return listOfEmployees;
+    }
+
+    public void setListOfEmployees(CustomLinkedList<Employee> listOfEmployees) {
+        this.listOfEmployees = listOfEmployees;
     }
 }
