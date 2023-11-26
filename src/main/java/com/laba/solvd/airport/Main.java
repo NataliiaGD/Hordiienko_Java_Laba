@@ -1,6 +1,5 @@
 package com.laba.solvd.airport;
 
-import com.laba.solvd.airport.exceptions.InvalidPriceException;
 import com.laba.solvd.airport.exceptions.InvalidTerminalTypeException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
