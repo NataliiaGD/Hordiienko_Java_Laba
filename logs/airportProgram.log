@@ -85,3 +85,42 @@
 2023-11-21 13:57:44 INFO  Main:77 - 1051.0
 2023-11-21 13:57:44 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
 2023-11-21 13:57:44 INFO  Main:81 - BoardingPass{passengerName='Bob', seatNumber='A107', flightNumber='1CD', boardingTime=2023-11-21T02:57:44.903782, gateNumber='10A'}
+2023-12-02 20:45:08 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-12-02 20:45:08 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-02 20:45:08 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-02 20:45:08 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-02 20:45:08 INFO  Employee:94 - Bob works as Pilot
+2023-12-02 20:45:08 INFO  Main:48 - 30
+2023-12-02 20:45:08 INFO  Employee:81 - Employee name Kate
+2023-12-02 20:45:08 INFO  Employee:82 - Employee id 3abc
+2023-12-02 20:45:08 INFO  Main:60 - 15
+2023-12-02 20:45:08 INFO  Terminal:50 - International terminal operation
+2023-12-02 20:45:08 INFO  Main:86 - 1051.0
+2023-12-02 20:45:08 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-02 20:45:08 INFO  Main:90 - BoardingPass{passengerName='Bob', seatNumber='A21', flightNumber='1CD', boardingTime=2023-12-02T04:45:08.523413, gateNumber='10A'}
+2023-12-02 20:56:25 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-12-02 20:56:25 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-02 20:56:25 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-02 20:56:25 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-02 20:56:25 INFO  Employee:94 - Bob works as Pilot
+2023-12-02 20:56:25 INFO  Main:52 - 30
+2023-12-02 20:56:25 INFO  Employee:81 - Employee name Kate
+2023-12-02 20:56:25 INFO  Employee:82 - Employee id 3abc
+2023-12-02 20:56:25 INFO  Main:64 - 15
+2023-12-02 20:56:25 INFO  Terminal:50 - International terminal operation
+2023-12-02 20:56:25 INFO  Main:90 - 1051.0
+2023-12-02 20:56:25 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-02 20:56:25 INFO  Main:94 - BoardingPass{passengerName='Bob', seatNumber='A24', flightNumber='1CD', boardingTime=2023-12-02T04:56:25.589323, gateNumber='10A'}
+2023-12-02 21:49:49 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
+2023-12-02 21:49:49 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-02 21:49:49 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-02 21:49:49 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-02 21:49:49 INFO  Employee:94 - Bob works as Pilot
+2023-12-02 21:49:49 INFO  Main:50 - 30
+2023-12-02 21:49:49 INFO  Employee:81 - Employee name Kate
+2023-12-02 21:49:49 INFO  Employee:82 - Employee id 3abc
+2023-12-02 21:49:49 INFO  Main:62 - 15
+2023-12-02 21:49:49 INFO  Terminal:50 - International terminal operation
+2023-12-02 21:49:49 INFO  Main:88 - 1051.0
+2023-12-02 21:49:49 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-02 21:49:49 INFO  Main:92 - BoardingPass{passengerName='Bob', seatNumber='A29', flightNumber='1CD', boardingTime=2023-12-02T05:49:49.498325, gateNumber='10A'}

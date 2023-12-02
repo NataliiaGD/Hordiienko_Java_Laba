@@ -1,5 +1,6 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.enums.AirportName;
 import com.laba.solvd.airport.interfaces.LuggageHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,20 +10,20 @@ import java.time.LocalDateTime;
 public class Flight implements LuggageHandler {
     private static final Logger LOGGER = LogManager.getLogger(Flight.class);
     private String flightNumber;
-    private String departureAirport;
-    private String arrivalAirport;
+    private AirportName departureAirport;
+    private AirportName arrivalAirport;
     private LocalDateTime departureTime;
     private LocalDateTime arrivalTime;
     private double distanceInKilometres;
 
 
-    public Flight(String flightNumber, String departureAirport, String arrivalAirport,
-                  LocalDateTime arrivalTime, LocalDateTime departureTime, double distanceInKilometres) {
+    public Flight(String flightNumber, AirportName departureAirport, AirportName arrivalAirport,
+                  LocalDateTime departureTime, LocalDateTime arrivalTime, double distanceInKilometres) {
         this.flightNumber = flightNumber;
         this.departureAirport = departureAirport;
         this.arrivalAirport = arrivalAirport;
-        this.arrivalTime = arrivalTime;
         this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
         this.distanceInKilometres = distanceInKilometres;
     }
 
@@ -34,20 +35,32 @@ public class Flight implements LuggageHandler {
         this.flightNumber = flightNumber;
     }
 
-    public String getArrivalAirport() {
-        return arrivalAirport;
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "flightNumber='" + flightNumber + '\'' +
+                ", departureAirport=" + departureAirport +
+                ", arrivalAirport=" + arrivalAirport +
+                ", departureTime=" + departureTime +
+                ", arrivalTime=" + arrivalTime +
+                ", distanceInKilometres=" + distanceInKilometres +
+                '}';
     }
 
-    public void setArrivalAirport(String arrivalAirport) {
-        this.arrivalAirport = arrivalAirport;
-    }
-
-    public String getDepartureAirport() {
+    public AirportName getDepartureAirport() {
         return departureAirport;
     }
 
-    public void setDepartureAirport(String departureAirport) {
+    public void setDepartureAirport(AirportName departureAirport) {
         this.departureAirport = departureAirport;
+    }
+
+    public AirportName getArrivalAirport() {
+        return arrivalAirport;
+    }
+
+    public void setArrivalAirport(AirportName arrivalAirport) {
+        this.arrivalAirport = arrivalAirport;
     }
 
     public LocalDateTime getArrivalTime() {

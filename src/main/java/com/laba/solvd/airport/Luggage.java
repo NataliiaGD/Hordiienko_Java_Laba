@@ -1,11 +1,13 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.enums.LuggageType;
+
 public final class Luggage {
-    private String type;
+    private LuggageType type;
     private double weight;
     private String ownerName;
 
-    public Luggage(String type, double weight, String ownerName) {
+    public Luggage(LuggageType type, double weight, String ownerName) {
         this.type = type;
         this.weight = weight;
         this.ownerName = ownerName;
@@ -20,11 +22,11 @@ public final class Luggage {
                 '}';
     }
 
-    public String getType() {
+    public LuggageType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(LuggageType type) {
         this.type = type;
     }
 

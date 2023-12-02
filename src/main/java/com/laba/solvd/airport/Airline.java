@@ -1,15 +1,17 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.enums.AirlineName;
+
 import java.util.List;
 import java.util.Objects;
 
 public class Airline {
-    private String airlineName;
+    private AirlineName airlineName;
     private int numberOfEmployees;
     private List<Aircraft> listOfAircraft;
     private CustomLinkedList<Employee> listOfEmployees;
 
-    public Airline(String airlineName, int numberOfEmployees, List<Aircraft> listOfAircraft, CustomLinkedList<Employee> listOfEmployees) {
+    public Airline(AirlineName airlineName, int numberOfEmployees, List<Aircraft> listOfAircraft, CustomLinkedList<Employee> listOfEmployees) {
         this.airlineName = airlineName;
         this.numberOfEmployees = numberOfEmployees;
         this.listOfAircraft = listOfAircraft;
@@ -21,7 +23,7 @@ public class Airline {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Airline airline = (Airline) o;
-        return numberOfEmployees == airline.numberOfEmployees && airlineName.equals(airline.airlineName) && listOfAircraft.equals(airline.listOfAircraft) && listOfEmployees.equals(airline.listOfEmployees);
+        return numberOfEmployees == airline.numberOfEmployees && airlineName == airline.airlineName && listOfAircraft.equals(airline.listOfAircraft) && listOfEmployees.equals(airline.listOfEmployees);
     }
 
     @Override
@@ -29,11 +31,11 @@ public class Airline {
         return Objects.hash(airlineName, numberOfEmployees, listOfAircraft, listOfEmployees);
     }
 
-    public String getAirlineName() {
+    public AirlineName getAirlineName() {
         return airlineName;
     }
 
-    public void setAirlineName(String airlineName) {
+    public void setAirlineName(AirlineName airlineName) {
         this.airlineName = airlineName;
     }
 
