@@ -1,16 +1,19 @@
 package com.laba.solvd.airport.enums;
 
 public enum TerminalType {
-    DOMESTIC("Domestic terminal"),
-    INTERNATIONAL("International terminal");
 
-    private final String description;
+    DOMESTIC,
+    INTERNATIONAL;
 
-    TerminalType(String description) {
-        this.description = description;
+    private String description;
+
+    static {
+        DOMESTIC.description = "Domestic terminal";
+        INTERNATIONAL.description = "International terminal";
     }
 
     public String getDescription() {
         return description;
     }
+
 }

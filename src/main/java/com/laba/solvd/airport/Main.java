@@ -1,6 +1,8 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.enums.AirportName;
 import com.laba.solvd.airport.exceptions.InvalidTerminalTypeException;
+import com.laba.solvd.airport.interfaces.FlightInformationPrinter;
 import com.laba.solvd.airport.interfaces.PassengerFilter;
 import com.laba.solvd.airport.interfaces.PassengerMapper;
 import com.laba.solvd.airport.interfaces.PassengerPrinter;
@@ -13,6 +15,9 @@ import java.util.function.*;
 
 import static com.laba.solvd.airport.BoardingPass.generateBoardingPass;
 import static com.laba.solvd.airport.Crew.calculateNumberOfCrewForFlight;
+import static com.laba.solvd.airport.Flight.printFlightInformation;
+import static com.laba.solvd.airport.Gate.*;
+import static com.laba.solvd.airport.Passenger.*;
 import static com.laba.solvd.airport.enums.AirlineName.LOT;
 import static com.laba.solvd.airport.enums.AirportName.*;
 import static com.laba.solvd.airport.enums.AirportType.*;
@@ -58,9 +63,11 @@ public class Main {
         LOGGER.info(calculateNumberOfCrewForFlight(flight1));
 
         List<Gate> listOfGates = new ArrayList<>();
-        listOfGates.add(new Gate("10A"));
-        listOfGates.add(new Gate("10B"));
-        listOfGates.add(new Gate("10C"));
+        listOfGates.add(new Gate("1A"));
+        listOfGates.add(new Gate("1B"));
+        listOfGates.add(new Gate("2A"));
+        listOfGates.add(new Gate("2B"));
+        listOfGates.add(new Gate("2B"));
         Gate gate = listOfGates.get(0);
 
         Terminal terminal1 = new Terminal("TerminalB", INTERNATIONAL, listOfGates);
@@ -102,24 +109,38 @@ public class Main {
         Supplier<Flight> createNewFlight = () -> new Flight("45", WARSAW_CHOPIN, DOHA_HAMMAD,
                 LocalDateTime.now().minusHours(15), LocalDateTime.now().minusHours(10), 5000);
         Flight newFlight = createNewFlight.get();
-        System.out.println(newFlight);
+        LOGGER.info(newFlight);
 
         BinaryOperator<Double> sumAllFlightsDistance = Double::sum;
         Optional<Double> totalDistanceOfAllFlights = listOfFlights.stream()
                 .map(flight -> flight.getDistanceInKilometres())
                 .reduce(sumAllFlightsDistance);
-        System.out.println(totalDistanceOfAllFlights);
+        LOGGER.info(totalDistanceOfAllFlights);
 
         PassengerFilter<Passenger> filterByAge = pass -> pass.getAge() > 18;
         List<Passenger> listOfPassengers = new ArrayList<>();
         listOfPassengers.add(passenger);
-        listOfPassengers.stream().filter(pass -> filterByAge.filter(pass)).forEach(System.out::println);
+        filterPassengersByAge(listOfPassengers, filterByAge);
 
         PassengerPrinter<Passenger> printPassengerInfo = pass -> System.out.println("Passenger " + pass.getName() + "Age " + pass.getAge());
-        listOfPassengers.forEach(pass -> printPassengerInfo.print(pass));
+        printPassengersInfo(listOfPassengers, printPassengerInfo);
 
         PassengerMapper<Passenger, String> mapToUppercaseName = pass -> pass.getName().toUpperCase();
-        listOfPassengers.stream().map(pass -> mapToUppercaseName.map(pass)).forEach(System.out::println);
+        printPassengersNameMapper(listOfPassengers, mapToUppercaseName);
+
+        FlightInformationPrinter<String, AirportName, AirportName> flightInfo =
+                (flightNumber, departureAirport, arrivalAirport) -> {
+                    LOGGER.info("Flight Number: " + flightNumber);
+                    LOGGER.info("Departure Airport: " + departureAirport);
+                    LOGGER.info("Arrival Airport: " + arrivalAirport);
+                };
+        printFlightInformation(flight1, flightInfo);
+
+        filterGates(listOfGates, "1");
+
+        printUniqueGates(listOfGates);
+
+        printModifiedGates(listOfGates, "2", "2");
 
     }
 }

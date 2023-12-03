@@ -1,6 +1,7 @@
 package com.laba.solvd.airport;
 
 import com.laba.solvd.airport.enums.AirportName;
+import com.laba.solvd.airport.interfaces.FlightInformationPrinter;
 import com.laba.solvd.airport.interfaces.LuggageHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -91,4 +92,9 @@ public class Flight implements LuggageHandler {
     public void addLuggage(Luggage luggage) {
         LOGGER.info("Luggage added to the flight: " + luggage);
     }
+
+    public static void printFlightInformation(Flight flight1, FlightInformationPrinter<String, AirportName, AirportName> flightInfo) {
+        flightInfo.printFlightInformation(flight1.getFlightNumber(), flight1.getDepartureAirport(), flight1.getArrivalAirport());
+    }
+
 }

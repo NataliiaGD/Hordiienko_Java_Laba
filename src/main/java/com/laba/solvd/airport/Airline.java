@@ -1,11 +1,18 @@
 package com.laba.solvd.airport;
 
 import com.laba.solvd.airport.enums.AirlineName;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 import java.util.Objects;
 
 public class Airline {
+    static {
+        System.setProperty("log4j.configurationFile", "log4j2.xml");
+    }
+
+    private static final Logger LOGGER = LogManager.getLogger(Airline.class);
     private AirlineName airlineName;
     private int numberOfEmployees;
     private List<Aircraft> listOfAircraft;
@@ -62,4 +69,10 @@ public class Airline {
     public void setListOfEmployees(CustomLinkedList<Employee> listOfEmployees) {
         this.listOfEmployees = listOfEmployees;
     }
+
+    public void printAirLineInfo() {
+        LOGGER.info(getAirlineName() + " has the following fleet: " + getListOfAircraft());
+    }
+
+
 }

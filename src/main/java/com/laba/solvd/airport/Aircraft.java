@@ -14,6 +14,14 @@ public class Aircraft implements Flyable {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "Aircraft{" +
+                "aircraftId=" + aircraftId +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
     public int getAircraftId() {
         return aircraftId;
     }

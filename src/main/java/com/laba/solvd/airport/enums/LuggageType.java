@@ -1,13 +1,14 @@
 package com.laba.solvd.airport.enums;
 
 public enum LuggageType {
-    CARRY_ON("Carry_on bag"),
-    CHECKED_BAG("Checked_bag");
+    CARRY_ON,
+    CHECKED_BAG;
 
-    private final String displayType;
+    private String displayType;
 
-    LuggageType(String displayType) {
-        this.displayType = displayType;
+    static {
+        CARRY_ON.displayType = "Carry_on bag";
+        CHECKED_BAG.displayType = "Checked_bag";
     }
 
     public String getType() {
