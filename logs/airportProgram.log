@@ -234,3 +234,51 @@
 2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.setListOfEmployees(com.laba.solvd.airport.CustomLinkedList)
 2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.printAirLineInfo()
 2023-12-05 15:36:38 INFO  Airline:74 - LUFTHANSA has the following fleet: [Aircraft{aircraftId=1, type='Boeing777'}, Aircraft{aircraftId=2, type='AirBus320'}]
+2023-12-11 21:51:22 INFO  Flight:102 - Flight 1CDF is starting its journey.
+2023-12-11 21:51:22 INFO  Aircraft:43 - AircraftId 2, Type Boeing777 is flying
+2023-12-11 21:51:22 INFO  Flight:103 - Flight 1CDF has completed its journey.
+2023-12-11 21:56:39 INFO  Aircraft:61 - Thread Thread-1 for AircraftId 3 started.
+2023-12-11 21:56:39 INFO  Aircraft:61 - Thread Thread-0 for AircraftId 2 started.
+2023-12-11 21:56:39 INFO  Aircraft:43 - AircraftId 2, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 21:56:39 INFO  Aircraft:43 - AircraftId 3, Type Boeing767 is starting to fly on thread Thread-1
+2023-12-11 21:56:41 INFO  Aircraft:51 - AircraftId 2, Type Boeing777 is flying
+2023-12-11 21:56:41 INFO  Aircraft:51 - AircraftId 3, Type Boeing767 is flying
+2023-12-11 21:56:41 INFO  Aircraft:54 - AircraftId 2, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 21:56:41 INFO  Aircraft:54 - AircraftId 3, Type Boeing767 finished flying on thread Thread-1
+2023-12-11 21:56:41 INFO  Aircraft:66 - Thread Thread-0 for AircraftId 2 finished. Execution time: 2113 ms
+2023-12-11 21:56:41 INFO  Aircraft:66 - Thread Thread-1 for AircraftId 3 finished. Execution time: 2113 ms
+2023-12-11 21:57:14 INFO  Aircraft:61 - Thread Thread-0 for AircraftId 1 started.
+2023-12-11 21:57:14 INFO  Aircraft:61 - Thread Thread-1 for AircraftId 2 started.
+2023-12-11 21:57:14 INFO  Aircraft:43 - AircraftId 2, Type Boeing767 is starting to fly on thread Thread-1
+2023-12-11 21:57:14 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 21:57:16 INFO  Aircraft:51 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 21:57:16 INFO  Aircraft:51 - AircraftId 2, Type Boeing767 is flying
+2023-12-11 21:57:16 INFO  Aircraft:54 - AircraftId 1, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 21:57:16 INFO  Aircraft:54 - AircraftId 2, Type Boeing767 finished flying on thread Thread-1
+2023-12-11 21:57:16 INFO  Aircraft:66 - Thread Thread-0 for AircraftId 1 finished. Execution time: 2109 ms
+2023-12-11 21:57:16 INFO  Aircraft:66 - Thread Thread-1 for AircraftId 2 finished. Execution time: 2109 ms
+2023-12-11 22:00:53 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:00:53 INFO  Flight:102 - Flight 1CDF is starting its journey.
+2023-12-11 22:00:53 INFO  Flight:103 - Flight 1CDF has completed its journey.
+2023-12-11 22:00:55 INFO  Aircraft:51 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:00:55 INFO  Aircraft:54 - AircraftId 1, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 22:04:12 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:04:12 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:04:12 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:04:12 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:04:12 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:06:49 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:06:49 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:06:49 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:06:49 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:06:49 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:06:57 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:06:57 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:06:57 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:06:57 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:06:57 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:07:03 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:07:03 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:07:03 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:07:03 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:07:03 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying

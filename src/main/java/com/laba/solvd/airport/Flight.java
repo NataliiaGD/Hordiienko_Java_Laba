@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDateTime;
 
-public class Flight implements LuggageHandler {
+public class Flight implements LuggageHandler, Runnable {
     private static final Logger LOGGER = LogManager.getLogger(Flight.class);
     private String flightNumber;
     private AirportName departureAirport;
@@ -97,4 +97,10 @@ public class Flight implements LuggageHandler {
         flightInfo.printFlightInformation(flight1.getFlightNumber(), flight1.getDepartureAirport(), flight1.getArrivalAirport());
     }
 
+    @Override
+    public void run() {
+        LOGGER.info("Flight " + Thread.currentThread().getName());
+        LOGGER.info("Flight " + flightNumber + " is starting its journey.");
+        LOGGER.info("Flight " + flightNumber + " has completed its journey.");
+    }
 }
