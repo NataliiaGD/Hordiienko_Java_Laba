@@ -1,87 +1,284 @@
-2023-11-18 21:47:12 INFO  Employee:22 - Employee with name Bob and age 35 and employee id abc221 is created
-2023-11-18 21:47:12 INFO  Employee:22 - Employee with name John and age 30 and employee id abc233 is created
-2023-11-18 21:47:12 INFO  Employee:22 - Employee with name Bred and age 25 and employee id abc221 is created
-2023-11-18 21:47:12 INFO  Employee:22 - Employee with name Kate and age 28 and employee id abc221 is created
-2023-11-18 21:47:12 INFO  Employee:22 - Employee with name Kelly and age 27 and employee id abc221 is created
-2023-11-18 21:47:12 INFO  Main:36 - 5
-2023-11-18 21:47:12 INFO  Main:40 - 800.0
-2023-11-20 21:34:41 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 21:34:41 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 21:34:42 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 21:34:42 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 21:34:42 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 21:34:42 INFO  Main:46 - 15
-2023-11-20 21:47:28 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 21:47:28 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 21:47:28 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 21:47:28 INFO  Main:46 - 15
-2023-11-20 21:47:28 INFO  Main:67 - 1051.0
-2023-11-20 21:54:49 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 21:54:49 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 21:54:49 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 21:54:49 INFO  Main:37 - 30
-2023-11-20 21:54:49 INFO  Main:48 - 15
-2023-11-20 21:54:49 INFO  Main:69 - 1051.0
-2023-11-20 21:57:29 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 21:57:29 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 21:57:29 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 21:57:29 INFO  Main:38 - 30
-2023-11-20 21:57:29 INFO  Employee:81 - Employee name Kate
-2023-11-20 21:57:29 INFO  Employee:82 - Employee id 3abc
-2023-11-20 21:57:29 INFO  Main:51 - 15
-2023-11-20 21:57:29 INFO  Main:72 - 1051.0
-2023-11-20 22:03:24 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 22:03:24 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 22:03:24 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 22:03:24 INFO  Main:38 - 30
-2023-11-20 22:03:24 INFO  Employee:81 - Employee name Kate
-2023-11-20 22:03:24 INFO  Employee:82 - Employee id 3abc
-2023-11-20 22:03:24 INFO  Main:50 - 15
-2023-11-20 22:03:24 INFO  Main:73 - 1051.0
-2023-11-20 22:03:24 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
-2023-11-20 22:08:34 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 22:08:34 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 22:08:34 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 22:08:34 INFO  Main:38 - 30
-2023-11-20 22:08:34 INFO  Employee:81 - Employee name Kate
-2023-11-20 22:08:34 INFO  Employee:82 - Employee id 3abc
-2023-11-20 22:08:34 INFO  Main:50 - 15
-2023-11-20 22:08:34 INFO  Terminal:50 - International terminal operation
-2023-11-20 22:08:34 INFO  Main:76 - 1051.0
-2023-11-20 22:08:34 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
-2023-11-20 22:14:13 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-20 22:14:13 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-20 22:14:13 INFO  Employee:94 - Bob works as Pilot
-2023-11-20 22:14:13 INFO  Main:39 - 30
-2023-11-20 22:14:13 INFO  Employee:81 - Employee name Kate
-2023-11-20 22:14:13 INFO  Employee:82 - Employee id 3abc
-2023-11-20 22:14:13 INFO  Main:51 - 15
-2023-11-20 22:14:13 INFO  Terminal:50 - International terminal operation
-2023-11-20 22:14:13 INFO  Main:79 - 1051.0
-2023-11-20 22:14:13 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
-2023-11-20 22:14:13 INFO  Main:84 - BoardingPass{passengerName='Bob', seatNumber='A82', flightNumber='1CD', boardingTime=2023-11-20T11:14:13.123010, gateNumber='10A'}
-2023-11-21 13:57:44 INFO  Aircraft:35 - AircraftId 1, Type Boeing777 is flying
-2023-11-21 13:57:44 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
-2023-11-21 13:57:44 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
-2023-11-21 13:57:44 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
-2023-11-21 13:57:44 INFO  Employee:94 - Bob works as Pilot
-2023-11-21 13:57:44 INFO  Main:39 - 30
-2023-11-21 13:57:44 INFO  Employee:81 - Employee name Kate
-2023-11-21 13:57:44 INFO  Employee:82 - Employee id 3abc
-2023-11-21 13:57:44 INFO  Main:51 - 15
-2023-11-21 13:57:44 INFO  Terminal:50 - International terminal operation
-2023-11-21 13:57:44 INFO  Main:77 - 1051.0
-2023-11-21 13:57:44 INFO  Flight:79 - Luggage added to the flight: Luggage{type='CarryOn', weight=5.0, ownerName='Bob'}
-2023-11-21 13:57:44 INFO  Main:81 - BoardingPass{passengerName='Bob', seatNumber='A107', flightNumber='1CD', boardingTime=2023-11-21T02:57:44.903782, gateNumber='10A'}
+2023-12-03 17:38:54 INFO  Reflection:21 - private static final org.apache.logging.log4j.Logger com.laba.solvd.airport.Aircraft.LOGGER
+2023-12-03 17:38:54 INFO  Reflection:21 - private int com.laba.solvd.airport.Aircraft.aircraftId
+2023-12-03 17:38:54 INFO  Reflection:21 - private java.lang.String com.laba.solvd.airport.Aircraft.type
+2023-12-03 17:38:54 INFO  Reflection:25 - public com.laba.solvd.airport.Aircraft(int,java.lang.String)
+2023-12-03 17:38:54 INFO  Reflection:29 - public java.lang.String com.laba.solvd.airport.Aircraft.toString()
+2023-12-03 17:38:54 INFO  Reflection:29 - public java.lang.String com.laba.solvd.airport.Aircraft.getType()
+2023-12-03 17:38:54 INFO  Reflection:29 - public int com.laba.solvd.airport.Aircraft.getAircraftId()
+2023-12-03 17:38:54 INFO  Reflection:29 - public void com.laba.solvd.airport.Aircraft.setAircraftId(int)
+2023-12-03 17:38:54 INFO  Reflection:29 - public void com.laba.solvd.airport.Aircraft.fly()
+2023-12-03 17:38:54 INFO  Reflection:29 - public void com.laba.solvd.airport.Aircraft.setType(java.lang.String)
+2023-12-03 17:39:09 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:39:09 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:39:09 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:39:09 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:39:09 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:39:09 INFO  Main:46 - 30
+2023-12-03 17:39:09 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:39:09 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:39:09 INFO  Main:58 - 15
+2023-12-03 17:39:09 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:39:09 INFO  Main:85 - 1051.0
+2023-12-03 17:39:09 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:39:09 INFO  Main:89 - BoardingPass{passengerName='Bob', seatNumber='A94', flightNumber='1CD', boardingTime=2023-12-03T01:39:09.398546, gateNumber='1A'}
+2023-12-03 17:39:09 INFO  Main:106 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:39:09.487375, arrivalTime=2023-12-03T07:39:09.487422, distanceInKilometres=5000.0}
+2023-12-03 17:39:09 INFO  Main:112 - Optional[10000.0]
+2023-12-03 17:39:09 INFO  Main:130 - Optional[com.laba.solvd.airport.Gate@3f6b0be5]
+2023-12-03 17:39:56 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:39:56 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:39:56 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:39:56 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:39:56 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:39:56 INFO  Main:46 - 30
+2023-12-03 17:39:56 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:39:56 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:39:56 INFO  Main:58 - 15
+2023-12-03 17:39:56 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:39:56 INFO  Main:85 - 1051.0
+2023-12-03 17:39:56 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:39:56 INFO  Main:89 - BoardingPass{passengerName='Bob', seatNumber='A46', flightNumber='1CD', boardingTime=2023-12-03T01:39:56.332503, gateNumber='1A'}
+2023-12-03 17:39:56 INFO  Main:106 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:39:56.453130, arrivalTime=2023-12-03T07:39:56.453176, distanceInKilometres=5000.0}
+2023-12-03 17:39:56 INFO  Main:112 - Optional[10000.0]
+2023-12-03 17:39:56 INFO  Main:130 - Optional[Gate{gateNumber='1A'}]
+2023-12-03 17:42:43 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:42:43 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:42:43 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:42:43 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:42:43 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:42:43 INFO  Main:47 - 30
+2023-12-03 17:42:43 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:42:43 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:42:43 INFO  Main:59 - 15
+2023-12-03 17:42:43 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:42:43 INFO  Main:86 - 1051.0
+2023-12-03 17:42:43 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:42:43 INFO  Main:90 - BoardingPass{passengerName='Bob', seatNumber='A90', flightNumber='1CD', boardingTime=2023-12-03T01:42:43.376657, gateNumber='1A'}
+2023-12-03 17:42:43 INFO  Main:107 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:42:43.482700, arrivalTime=2023-12-03T07:42:43.482743, distanceInKilometres=5000.0}
+2023-12-03 17:42:43 INFO  Main:113 - Optional[10000.0]
+2023-12-03 17:42:43 INFO  Main:131 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-03 17:49:21 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:49:21 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:49:21 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:49:21 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:49:21 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:49:21 INFO  Main:47 - 30
+2023-12-03 17:49:21 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:49:21 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:49:21 INFO  Main:59 - 15
+2023-12-03 17:49:21 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:49:21 INFO  Main:87 - 1051.0
+2023-12-03 17:49:21 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:49:21 INFO  Main:91 - BoardingPass{passengerName='Bob', seatNumber='A139', flightNumber='1CD', boardingTime=2023-12-03T01:49:21.696091, gateNumber='1A'}
+2023-12-03 17:49:21 INFO  Main:108 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:49:21.789393, arrivalTime=2023-12-03T07:49:21.789419, distanceInKilometres=5000.0}
+2023-12-03 17:49:21 INFO  Main:114 - Optional[10000.0]
+2023-12-03 17:49:21 INFO  Main:132 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-03 17:53:18 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:53:18 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:53:18 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:53:18 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:53:18 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:53:18 INFO  Main:47 - 30
+2023-12-03 17:53:18 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:53:18 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:53:18 INFO  Main:59 - 15
+2023-12-03 17:53:18 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:53:19 INFO  Main:87 - 1051.0
+2023-12-03 17:53:19 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:53:19 INFO  Main:91 - BoardingPass{passengerName='Bob', seatNumber='A143', flightNumber='1CD', boardingTime=2023-12-03T01:53:18.988262, gateNumber='1A'}
+2023-12-03 17:53:19 INFO  Main:108 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:53:19.070006, arrivalTime=2023-12-03T07:53:19.070061, distanceInKilometres=5000.0}
+2023-12-03 17:53:19 INFO  Main:114 - Optional[10000.0]
+2023-12-03 17:53:19 INFO  Main:132 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-03 17:59:16 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 17:59:16 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 17:59:16 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 17:59:16 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 17:59:16 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 17:59:16 INFO  Main:47 - 30
+2023-12-03 17:59:16 INFO  Employee:81 - Employee name Kate
+2023-12-03 17:59:16 INFO  Employee:82 - Employee id 3abc
+2023-12-03 17:59:16 INFO  Main:59 - 15
+2023-12-03 17:59:16 INFO  Terminal:50 - International terminal operation
+2023-12-03 17:59:16 INFO  Main:87 - 1051.0
+2023-12-03 17:59:16 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 17:59:16 INFO  Main:91 - BoardingPass{passengerName='Bob', seatNumber='A23', flightNumber='1CD', boardingTime=2023-12-03T01:59:16.786812, gateNumber='1A'}
+2023-12-03 17:59:16 INFO  Main:108 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T02:59:16.889678, arrivalTime=2023-12-03T07:59:16.889702, distanceInKilometres=5000.0}
+2023-12-03 17:59:16 INFO  Main:114 - Optional[10000.0]
+2023-12-03 17:59:16 INFO  Main:132 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-03 18:06:24 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 18:06:24 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 18:06:24 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 18:06:24 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 18:06:24 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 18:06:24 INFO  Main:47 - 30
+2023-12-03 18:06:24 INFO  Employee:81 - Employee name Kate
+2023-12-03 18:06:24 INFO  Employee:82 - Employee id 3abc
+2023-12-03 18:06:24 INFO  Main:59 - 15
+2023-12-03 18:06:24 INFO  Terminal:50 - International terminal operation
+2023-12-03 18:06:24 INFO  Main:87 - 1051.0
+2023-12-03 18:06:24 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 18:06:24 INFO  Main:91 - BoardingPass{passengerName='Bob', seatNumber='A91', flightNumber='1CD', boardingTime=2023-12-03T02:06:24.554840, gateNumber='1A'}
+2023-12-03 18:06:24 INFO  Main:108 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T03:06:24.630799, arrivalTime=2023-12-03T08:06:24.630839, distanceInKilometres=5000.0}
+2023-12-03 18:06:24 INFO  Main:114 - Optional[10000.0]
+2023-12-03 18:06:24 INFO  Main:132 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-03 18:06:50 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-03 18:06:50 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-03 18:06:50 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-03 18:06:50 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-03 18:06:50 INFO  Employee:94 - Bob works as Pilot
+2023-12-03 18:06:50 INFO  Main:47 - 30
+2023-12-03 18:06:50 INFO  Employee:81 - Employee name Kate
+2023-12-03 18:06:50 INFO  Employee:82 - Employee id 3abc
+2023-12-03 18:06:50 INFO  Main:59 - 15
+2023-12-03 18:06:50 INFO  Terminal:50 - International terminal operation
+2023-12-03 18:06:50 INFO  Main:87 - 1051.0
+2023-12-03 18:06:50 INFO  Flight:92 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-03 18:06:50 INFO  Main:91 - BoardingPass{passengerName='Bob', seatNumber='A39', flightNumber='1CD', boardingTime=2023-12-03T02:06:50.485733, gateNumber='1A'}
+2023-12-03 18:06:50 INFO  Main:108 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-03T03:06:50.577195, arrivalTime=2023-12-03T08:06:50.577230, distanceInKilometres=5000.0}
+2023-12-03 18:06:50 INFO  Main:114 - Optional[10000.0]
+2023-12-03 18:06:50 INFO  Main:132 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-05 13:41:09 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-05 13:41:09 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-05 13:41:09 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-05 13:41:09 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-05 13:41:09 INFO  Employee:94 - Bob works as Pilot
+2023-12-05 13:41:09 INFO  Main:53 - 30
+2023-12-05 13:41:09 INFO  Employee:81 - Employee name Kate
+2023-12-05 13:41:09 INFO  Employee:82 - Employee id 3abc
+2023-12-05 13:41:09 INFO  Main:65 - 15
+2023-12-05 13:41:09 INFO  Terminal:50 - International terminal operation
+2023-12-05 13:41:09 INFO  Main:93 - 1051.0
+2023-12-05 13:41:09 INFO  Flight:93 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-05 13:41:09 INFO  Main:97 - BoardingPass{passengerName='Bob', seatNumber='A106', flightNumber='1CD', boardingTime=2023-12-04T21:41:09.547081, gateNumber='1A'}
+2023-12-05 13:41:09 INFO  Main:114 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-04T22:41:09.631636, arrivalTime=2023-12-05T03:41:09.631682, distanceInKilometres=5000.0}
+2023-12-05 13:41:09 INFO  Main:120 - Optional[10000.0]
+2023-12-05 13:41:09 INFO  Main:135 - Flight Number: 1CD
+2023-12-05 13:41:09 INFO  Main:136 - Departure Airport: WARSAW_CHOPIN
+2023-12-05 13:41:09 INFO  Main:137 - Arrival Airport: DOHA_HAMMAD
+2023-12-05 13:41:09 INFO  Main:142 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-05 13:41:09 INFO  Gate:54 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}, Gate{gateNumber='2A'}, Gate{gateNumber='2B'}, Gate{gateNumber='2B'}]
+2023-12-05 13:42:06 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-05 13:42:06 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-05 13:42:06 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-05 13:42:06 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-05 13:42:06 INFO  Employee:94 - Bob works as Pilot
+2023-12-05 13:42:06 INFO  Main:53 - 30
+2023-12-05 13:42:06 INFO  Employee:81 - Employee name Kate
+2023-12-05 13:42:06 INFO  Employee:82 - Employee id 3abc
+2023-12-05 13:42:06 INFO  Main:65 - 15
+2023-12-05 13:42:06 INFO  Terminal:50 - International terminal operation
+2023-12-05 13:42:06 INFO  Main:93 - 1051.0
+2023-12-05 13:42:06 INFO  Flight:93 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-05 13:42:06 INFO  Main:97 - BoardingPass{passengerName='Bob', seatNumber='A148', flightNumber='1CD', boardingTime=2023-12-04T21:42:06.356479, gateNumber='1A'}
+2023-12-05 13:42:06 INFO  Main:114 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-04T22:42:06.444409, arrivalTime=2023-12-05T03:42:06.444469, distanceInKilometres=5000.0}
+2023-12-05 13:42:06 INFO  Main:120 - Optional[10000.0]
+2023-12-05 13:42:06 INFO  Main:135 - Flight Number: 1CD
+2023-12-05 13:42:06 INFO  Main:136 - Departure Airport: WARSAW_CHOPIN
+2023-12-05 13:42:06 INFO  Main:137 - Arrival Airport: DOHA_HAMMAD
+2023-12-05 13:42:06 INFO  Main:142 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-05 13:46:32 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-05 13:46:32 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-05 13:46:32 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-05 13:46:32 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-05 13:46:32 INFO  Employee:94 - Bob works as Pilot
+2023-12-05 13:46:32 INFO  Main:52 - 30
+2023-12-05 13:46:32 INFO  Employee:81 - Employee name Kate
+2023-12-05 13:46:32 INFO  Employee:82 - Employee id 3abc
+2023-12-05 13:46:32 INFO  Main:64 - 15
+2023-12-05 13:46:32 INFO  Terminal:50 - International terminal operation
+2023-12-05 13:46:32 INFO  Main:92 - 1051.0
+2023-12-05 13:46:32 INFO  Flight:93 - Luggage added to the flight: Luggage{type='CARRY_ON', weight=5.0, ownerName='Bob'}
+2023-12-05 13:46:32 INFO  Main:96 - BoardingPass{passengerName='Bob', seatNumber='A117', flightNumber='1CD', boardingTime=2023-12-04T21:46:32.202336, gateNumber='1A'}
+2023-12-05 13:46:32 INFO  Main:113 - Flight{flightNumber='45', departureAirport=WARSAW_CHOPIN, arrivalAirport=DOHA_HAMMAD, departureTime=2023-12-04T22:46:32.288574, arrivalTime=2023-12-05T03:46:32.288626, distanceInKilometres=5000.0}
+2023-12-05 13:46:32 INFO  Main:119 - Optional[10000.0]
+2023-12-05 13:46:32 INFO  Main:134 - Flight Number: 1CD
+2023-12-05 13:46:32 INFO  Main:135 - Departure Airport: WARSAW_CHOPIN
+2023-12-05 13:46:32 INFO  Main:136 - Arrival Airport: DOHA_HAMMAD
+2023-12-05 13:46:32 INFO  Main:141 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-05 13:46:32 INFO  Gate:68 - [Gate{gateNumber='1A'}, Gate{gateNumber='1B'}]
+2023-12-05 13:57:26 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-05 13:57:26 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-05 13:57:26 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-05 13:57:26 INFO  Reflection:41 - private com.laba.solvd.airport.enums.AirlineName com.laba.solvd.airport.Airline.airlineName
+2023-12-05 13:57:26 INFO  Reflection:41 - private int com.laba.solvd.airport.Airline.numberOfEmployees
+2023-12-05 13:57:26 INFO  Reflection:41 - private java.util.List com.laba.solvd.airport.Airline.listOfAircraft
+2023-12-05 13:57:26 INFO  Reflection:41 - private com.laba.solvd.airport.CustomLinkedList com.laba.solvd.airport.Airline.listOfEmployees
+2023-12-05 13:57:26 INFO  Reflection:45 - public com.laba.solvd.airport.Airline(com.laba.solvd.airport.enums.AirlineName,int,java.util.List,com.laba.solvd.airport.CustomLinkedList)
+2023-12-05 13:57:26 INFO  Reflection:49 - public boolean com.laba.solvd.airport.Airline.equals(java.lang.Object)
+2023-12-05 13:57:26 INFO  Reflection:49 - public int com.laba.solvd.airport.Airline.hashCode()
+2023-12-05 13:57:26 INFO  Reflection:49 - public com.laba.solvd.airport.enums.AirlineName com.laba.solvd.airport.Airline.getAirlineName()
+2023-12-05 13:57:26 INFO  Reflection:49 - public void com.laba.solvd.airport.Airline.setAirlineName(com.laba.solvd.airport.enums.AirlineName)
+2023-12-05 13:57:26 INFO  Reflection:49 - public int com.laba.solvd.airport.Airline.getNumberOfEmployees()
+2023-12-05 13:57:26 INFO  Reflection:49 - public void com.laba.solvd.airport.Airline.setNumberOfEmployees(int)
+2023-12-05 13:57:26 INFO  Reflection:49 - public java.util.List com.laba.solvd.airport.Airline.getListOfAircraft()
+2023-12-05 13:57:26 INFO  Reflection:49 - public void com.laba.solvd.airport.Airline.setListOfAircraft(java.util.List)
+2023-12-05 13:57:26 INFO  Reflection:49 - public com.laba.solvd.airport.CustomLinkedList com.laba.solvd.airport.Airline.getListOfEmployees()
+2023-12-05 13:57:26 INFO  Reflection:49 - public void com.laba.solvd.airport.Airline.setListOfEmployees(com.laba.solvd.airport.CustomLinkedList)
+2023-12-05 15:36:38 INFO  Employee:22 - Employee with name Bob and age 35 and employee id 1abc is created
+2023-12-05 15:36:38 INFO  Employee:22 - Employee with name Robert and age 37 and employee id 2abc is created
+2023-12-05 15:36:38 INFO  Employee:22 - Employee with name Kate and age 30 and employee id 3abc is created
+2023-12-05 15:36:38 INFO  Reflection:44 - private static final org.apache.logging.log4j.Logger com.laba.solvd.airport.Airline.LOGGER
+2023-12-05 15:36:38 INFO  Reflection:44 - private com.laba.solvd.airport.enums.AirlineName com.laba.solvd.airport.Airline.airlineName
+2023-12-05 15:36:38 INFO  Reflection:44 - private int com.laba.solvd.airport.Airline.numberOfEmployees
+2023-12-05 15:36:38 INFO  Reflection:44 - private java.util.List com.laba.solvd.airport.Airline.listOfAircraft
+2023-12-05 15:36:38 INFO  Reflection:44 - private com.laba.solvd.airport.CustomLinkedList com.laba.solvd.airport.Airline.listOfEmployees
+2023-12-05 15:36:38 INFO  Reflection:48 - public com.laba.solvd.airport.Airline(com.laba.solvd.airport.enums.AirlineName,int,java.util.List,com.laba.solvd.airport.CustomLinkedList)
+2023-12-05 15:36:38 INFO  Reflection:52 - public boolean com.laba.solvd.airport.Airline.equals(java.lang.Object)
+2023-12-05 15:36:38 INFO  Reflection:52 - public int com.laba.solvd.airport.Airline.hashCode()
+2023-12-05 15:36:38 INFO  Reflection:52 - public com.laba.solvd.airport.enums.AirlineName com.laba.solvd.airport.Airline.getAirlineName()
+2023-12-05 15:36:38 INFO  Reflection:52 - public java.util.List com.laba.solvd.airport.Airline.getListOfAircraft()
+2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.setAirlineName(com.laba.solvd.airport.enums.AirlineName)
+2023-12-05 15:36:38 INFO  Reflection:52 - public int com.laba.solvd.airport.Airline.getNumberOfEmployees()
+2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.setNumberOfEmployees(int)
+2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.setListOfAircraft(java.util.List)
+2023-12-05 15:36:38 INFO  Reflection:52 - public com.laba.solvd.airport.CustomLinkedList com.laba.solvd.airport.Airline.getListOfEmployees()
+2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.setListOfEmployees(com.laba.solvd.airport.CustomLinkedList)
+2023-12-05 15:36:38 INFO  Reflection:52 - public void com.laba.solvd.airport.Airline.printAirLineInfo()
+2023-12-05 15:36:38 INFO  Airline:74 - LUFTHANSA has the following fleet: [Aircraft{aircraftId=1, type='Boeing777'}, Aircraft{aircraftId=2, type='AirBus320'}]
+2023-12-11 21:51:22 INFO  Flight:102 - Flight 1CDF is starting its journey.
+2023-12-11 21:51:22 INFO  Aircraft:43 - AircraftId 2, Type Boeing777 is flying
+2023-12-11 21:51:22 INFO  Flight:103 - Flight 1CDF has completed its journey.
+2023-12-11 21:56:39 INFO  Aircraft:61 - Thread Thread-1 for AircraftId 3 started.
+2023-12-11 21:56:39 INFO  Aircraft:61 - Thread Thread-0 for AircraftId 2 started.
+2023-12-11 21:56:39 INFO  Aircraft:43 - AircraftId 2, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 21:56:39 INFO  Aircraft:43 - AircraftId 3, Type Boeing767 is starting to fly on thread Thread-1
+2023-12-11 21:56:41 INFO  Aircraft:51 - AircraftId 2, Type Boeing777 is flying
+2023-12-11 21:56:41 INFO  Aircraft:51 - AircraftId 3, Type Boeing767 is flying
+2023-12-11 21:56:41 INFO  Aircraft:54 - AircraftId 2, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 21:56:41 INFO  Aircraft:54 - AircraftId 3, Type Boeing767 finished flying on thread Thread-1
+2023-12-11 21:56:41 INFO  Aircraft:66 - Thread Thread-0 for AircraftId 2 finished. Execution time: 2113 ms
+2023-12-11 21:56:41 INFO  Aircraft:66 - Thread Thread-1 for AircraftId 3 finished. Execution time: 2113 ms
+2023-12-11 21:57:14 INFO  Aircraft:61 - Thread Thread-0 for AircraftId 1 started.
+2023-12-11 21:57:14 INFO  Aircraft:61 - Thread Thread-1 for AircraftId 2 started.
+2023-12-11 21:57:14 INFO  Aircraft:43 - AircraftId 2, Type Boeing767 is starting to fly on thread Thread-1
+2023-12-11 21:57:14 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 21:57:16 INFO  Aircraft:51 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 21:57:16 INFO  Aircraft:51 - AircraftId 2, Type Boeing767 is flying
+2023-12-11 21:57:16 INFO  Aircraft:54 - AircraftId 1, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 21:57:16 INFO  Aircraft:54 - AircraftId 2, Type Boeing767 finished flying on thread Thread-1
+2023-12-11 21:57:16 INFO  Aircraft:66 - Thread Thread-0 for AircraftId 1 finished. Execution time: 2109 ms
+2023-12-11 21:57:16 INFO  Aircraft:66 - Thread Thread-1 for AircraftId 2 finished. Execution time: 2109 ms
+2023-12-11 22:00:53 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:00:53 INFO  Flight:102 - Flight 1CDF is starting its journey.
+2023-12-11 22:00:53 INFO  Flight:103 - Flight 1CDF has completed its journey.
+2023-12-11 22:00:55 INFO  Aircraft:51 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:00:55 INFO  Aircraft:54 - AircraftId 1, Type Boeing777 finished flying on thread Thread-0
+2023-12-11 22:04:12 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:04:12 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:04:12 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:04:12 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:04:12 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:06:49 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:06:49 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:06:49 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:06:49 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:06:49 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:06:57 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:06:57 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:06:57 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:06:57 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:06:57 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying
+2023-12-11 22:07:03 INFO  Flight:102 - Flight Thread-1
+2023-12-11 22:07:03 INFO  Aircraft:49 - AircraftId 1, Type Boeing777 is starting to fly on thread Thread-0
+2023-12-11 22:07:03 INFO  Flight:103 - Flight 1CDF is starting its journey.
+2023-12-11 22:07:03 INFO  Flight:104 - Flight 1CDF has completed its journey.
+2023-12-11 22:07:03 INFO  Aircraft:43 - AircraftId 1, Type Boeing777 is flying

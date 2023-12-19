@@ -1,19 +1,20 @@
 package com.laba.solvd.airport;
 
+import com.laba.solvd.airport.enums.AirportName;
 import com.laba.solvd.airport.enums.AirportType;
 
 import java.util.List;
 import java.util.Set;
 
 public class Airport {
-    private String name;
+    private AirportName name;
     private String airportCode;
     private String location;
     private AirportType airportType;
     private List<Flight> listOfFlights;
     private Set<Terminal> setOfTerminals;
 
-    public Airport(String name, String airportCode, String location, AirportType airportType,
+    public Airport(AirportName name, String airportCode, String location, AirportType airportType,
                    List<Flight> listOfFlights, Set<Terminal> setOfTerminals) {
         this.name = name;
         this.airportCode = airportCode;
@@ -35,11 +36,11 @@ public class Airport {
                 '}';
     }
 
-    public String getName() {
+    public AirportName getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(AirportName name) {
         this.name = name;
     }
 

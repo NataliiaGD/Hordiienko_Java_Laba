@@ -4,7 +4,7 @@ import com.laba.solvd.airport.interfaces.Flyable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Aircraft implements Flyable {
+public class Aircraft extends Thread implements Flyable {
     private static final Logger LOGGER = LogManager.getLogger(Aircraft.class);
     private int aircraftId;
     private String type;
@@ -12,6 +12,14 @@ public class Aircraft implements Flyable {
     public Aircraft(int aircraftId, String type) {
         this.aircraftId = aircraftId;
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Aircraft{" +
+                "aircraftId=" + aircraftId +
+                ", type='" + type + '\'' +
+                '}';
     }
 
     public int getAircraftId() {
@@ -33,5 +41,12 @@ public class Aircraft implements Flyable {
     @Override
     public void fly() {
         LOGGER.info("AircraftId " + getAircraftId() + "," + " Type " + getType() + " is flying");
+
+    }
+
+    @Override
+    public void run() {
+        LOGGER.info("AircraftId " + getAircraftId() + "," + " Type " + getType() + " is starting to fly on thread " + Thread.currentThread().getName());
+        fly();
     }
 }
